@@ -8,6 +8,21 @@
 
 // ? ################################ ESERCIZIO ################################
 
-const listaSpesa = ['Latte', 'Burro', 'Uova', 'Farina', 'Miele', 'Cacao', 'Lievito', 'Zucchero', 'Sale', 'Mele', 'Zucchero a velo']
+const shoppingListArray = ['Latte', 'Burro', 'Uova', 'Farina', 'Miele', 'Cacao', 'Lievito', 'Zucchero', 'Sale', 'Mele', 'Zucchero a velo'];
+
+const shoppingList = document.getElementById('shopping-list');
+
+let i = 0;
+
+while (i < shoppingListArray.length){
+
+    const shoppingListElement = document.createElement('li');
+
+    shoppingList.append(shoppingListElement);
+
+    shoppingListElement.innerHTML = shoppingListArray[i];
+
+    i++;
+}
 
 
